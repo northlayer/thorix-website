@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/yearfix.js" defer></script>
+        <title>Information/Policy | ThorIX</title>
+    </head>
+    <body>
+        <div class="header">
+            <a href="/">
+                <img src="./img/thorix.svg" class="logo" />
+            </a>
+            <div class="nav">
+                <a href="./about.html">About</a>
+                <a href="./members.html">Members</a>
+                <a href="./join.html">Join</a>
+                <a href="./information.html">Information</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="pagetitle">
+            <h1>Information/Policy</h1>
+        </div>
+        <div class="info">
+            <p class="paragraph">As ThorIX is still under "construction" and its organisational structure being chosen there is no concrete policy for members and traffic yet. Here we have outlined a basic policy that will be amended in the coming months:</p>
+            <ol class="paragraph">
+                <li>ThorIX is a tunnel-free internet exchange point. Members may not join using non-physical connections and members may not extend the IX's VLAN over a tunnel or otherwise direct IX traffic in/our via connections relying on tunneling technology as this defeats the purpose of peering.</li>
+                <li>Members must upgrade/offload their ports if they reach a 80% consistent utilisation. There is no specified timeframe for this but generally if you are seeing 80+% utilisation of your port for an extended period of time (e.g. 24h), you should upgrade.</li>
+                <li>Members are responsible for arranging for cross-connect and providing transceivers for conencting to the IX.</li>
+            </ol>
+        </div>
+        <div class="footer">
+            <div class="inner">
+                <p>&copy; <span id="year">2023</span> Northlayer ehf.</p>
+            </div>
+        </div>
+    </body>
+</html>

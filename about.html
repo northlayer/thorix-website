@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/yearfix.js" defer></script>
+        <title>About | ThorIX</title>
+    </head>
+    <body>
+        <div class="header">
+            <a href="/">
+                <img src="./img/thorix.svg" class="logo" />
+            </a>
+            <div class="nav">
+                <a href="./about.html">About</a>
+                <a href="./members.html">Members</a>
+                <a href="./join.html">Join</a>
+                <a href="./information.html">Information</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="pagetitle">
+            <h1>About ThorIX</h1>
+        </div>
+        <div class="about">
+            <p class="title">What is ThorIX?</p>
+            <p class="paragraph">ThorIX is a datacentre & metro interconnection project in Iceland which has the goal of connecting together the main datacentres in the country. This project is spearheaded by Northlayer, an Icelandic web development firm from Reykjavík with web hosting infrastructure in Hafnarfjörður. The project was born out of a want to peer with other networks in Iceland's various datacentres but having a lack of infrastructure to do so, being limited to what is local to each network until eventually being able to justify the cost of interconencting to RIX or Múli IXP.</p>
+            <p class="paragraph">We are addressing these problems by creating a fully independent peering LAN that will have equipment local to each facility in Iceland. We'll be starting out of our local facility, ThorDC (or atNorth ICE01) in Hafnarfjörður, and from there slowly expanding using leased L2 from various local interconnection providers to datacentres in Reykjavík, Keflavík, and Blönduós.</p>
+            <p class="paragraph">Shortly worded; ThorIX is a replacement for having to do PNI across kilometres of land just to peer with networks like e.g. Cloudflare from ThorDC without having to use RIX.</p>
+            <small style="margin-top:0.5rem;display:block;">Please note, Cloudflare is not a ThorIX member (yet!) and they are only mentioned as an example of what this project could bring.</small>
+        </div>
+        <div class="architecture">
+            <p class="title">Architecture</p>
+            <p class="paragraph">ThorIX's architecture will be fairly simple from the start. One switch will be present at each location (facility), starting with ThorDC of course, with support for 1G, 10G, and 40G SFP, SFP+, & QSFP28 links. For now, we will stick with Arista switches (specifically 7050S-64 models) but we expect all of this to change.</p>
+            <p class="paragraph">Once more than two facilities have been added the IX "association", as we'd like to call it, will start leasing L2 connectivity from various interconnect providers (e.g. <a href="https://www.mila.is/endursoluadilar/stofnnet/hradbraut/" target="_blank" rel="noreferrer">Míla</a>) which will then connect these switches together and extend the VLAN across to all active facilities. These L2 interconnects will likely have to be in the 100G range but that will have to be decided at a future date. Members and potential members will then be able to peer over the VLAN connection, reducing both load on the other Icelandic internet exchanges but also bringing the possibility of peering to more, smaller networks.</p>
+            <p class="paragraph">Of course, as we have repeated several times, this architecture is bound to change and it is likely that experts in the networking field will have recommendations for us that we will gladly accept. We hope to run the IX using a model where every member has a say in how it is run and can contribute to the way it is set up.</p>
+        </div>
+        <div class="current-hardware">
+            <p class="title">Current Hardware</p>
+            <p class="paragraph">Our current hardware is like so:</p>
+            <ul class="paragraph">
+                <li>Arista DCS-7050S-52-F &mdash; 52 SFP+ 10G port & 4 QSFP28 40G port switch (located in ThorDC)</li>
+                <li>VMs provided by Northlayer for route-servers, Xeon Silver 4210 platform, 4GB each</li>
+            </ul>
+            <p class="paragraph">As this project expands more hardware will be listed here and likely with proper labeling corresponding to IXPManager details and physical labeling. If you have unused hardware lying around that would be compatible for this project we would love to have it. We expect to keep peers online as much as possible but of course you retain all ownership of what's yours and can get it back if need be.</p>
+        </div>
+        <div class="join-us">
+            <p class="title">Join us!</p>
+            <p class="paragraph">If this project sounds at all remotely interesting to you we encourage you to join us! We are by no means experts at what we are setting up here and will appreciate any help. Whether you can contribute connectvity, hardware, assistance, experience, or any other resources to this project or not we will always appreciate having more people on board with this.</p>
+            <p class="paragraph">Shortly we will be setting up a mailing list for this project as well as some social media channels (we hear Telegram and Discord are popular amongst networking people these days!), but if you'd like to show your interest in the meanwhile you can send an email to <a href="mailto:kjartanh@northlayer.is">Kjartan Hrafnkelsson &lt;kjartanh@northlayer.is&gt;</a>, who is the main organiser from Northlayer of this project, and share your interest.</p>
+            <p class="paragraph">For now, ports will be completely free as long as they last. All you must do as a network hoping to participate is arrange for cross-connect and provide a transceiver. We don't have many concrete rules while in these beginning stages so feel free to email us and ask away!</p>
+        </div>
+        <div class="footer">
+            <div class="inner">
+                <p>&copy; <span id="year">2023</span> Northlayer ehf.</p>
+            </div>
+        </div>
+    </body>
+</html>

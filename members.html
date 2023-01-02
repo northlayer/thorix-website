@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/yearfix.js" defer></script>
+        <title>Members | ThorIX</title>
+    </head>
+    <body>
+        <div class="header">
+            <a href="/">
+                <img src="./img/thorix.svg" class="logo" />
+            </a>
+            <div class="nav">
+                <a href="./about.html">About</a>
+                <a href="./members.html">Members</a>
+                <a href="./join.html">Join</a>
+                <a href="./information.html">Information</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="pagetitle">
+            <h1>ThorIX members</h1>
+        </div>
+        <div class="members">
+            <p class="paragraph" style="margin-bottom: 1rem;">Here is an up-to-date list of ThorIX members, their port speeds, IP address allocations, rate-limits, AS-numbers, and e.t.c.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Member</th>
+                        <th>ASN</th>
+                        <th>Port speed</th>
+                        <th>IPv4</th>
+                        <th>IPv6</th>
+                        <th>Rate-limit?</th>
+                        <th>Peering policy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>ThorIX RS 1</th>
+                        <th>AS65444</th>
+                        <th>1G</th>
+                        <th>100.100.0.1/20</th>
+                        <th>2a07:54c0::1/48</th>
+                        <th>1G@10G</th>
+                        <th>Open</th>
+                    </tr>
+                    <tr>
+                        <th>ThorIX RS 2</th>
+                        <th>AS65445</th>
+                        <th>1G</th>
+                        <th>100.100.0.2/20</th>
+                        <th>2a07:54c0::2/48</th>
+                        <th>1G@10G</th>
+                        <th>Open</th>
+                    </tr>
+                    <tr>
+                        <th>Northlayer ehf</th>
+                        <th>AS59788</th>
+                        <th>10G</th>
+                        <th>100.100.0.3/20</th>
+                        <th>2a07:54c0::3/48</th>
+                        <th>--</th>
+                        <th>Open</th>
+                    </tr>
+                    <tr>
+                        <th>Northlayer ehf</th>
+                        <th>AS59788</th>
+                        <th>10G</th>
+                        <th>100.100.0.4/20</th>
+                        <th>2a07:54c0::4/48</th>
+                        <th>--</th>
+                        <th>Open</th>
+                    </tr>
+                    <tr>
+                        <th>Kjartan Hrafnkelsson</th>
+                        <th>AS51019</th>
+                        <th>1G</th>
+                        <th>100.100.0.5/20</th>
+                        <th>2a07:54c0::5/48</th>
+                        <th>--</th>
+                        <th>Open</th>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="paragraph">Please note that because we are awaiting receiving an IX allocation from RIPE IPv4 is currently done using CGNAT IPv4 space. CGNAT generally should not cause issues in Iceland as there are no operators known to use it but we still understand that it is best practice to have a real IXP allocation.</p>
+        </div>
+        <div class="footer">
+            <div class="inner">
+                <p>&copy; <span id="year">2023</span> Northlayer ehf.</p>
+            </div>
+        </div>
+    </body>
+</html>
