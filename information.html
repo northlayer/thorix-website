@@ -38,6 +38,16 @@
                 <li>Members must maintain an accurate RPSL routing policy in an authenticated IRR database. We may make exceptions where needed, just ask!</li>
             </ol>
         </div>
+        <div class="info">
+            <p class="title">IPv4/IPv6 VLAN ranges</p>
+            <p class="paragraph">ThorIX currently uses the two following IP address ranges for the IX VLAN with members being allocated one IP address (/32 IPv4, /128 IPv6) per IP version per port:</p>
+            <ul class="paragraph">
+                <li>2a07:54c0::/64</li>
+                <li>100.100.0.0/20</li>
+            </ul>
+            <p class="paragraph">Please note that the IPv4 range is temporarily a CGNAT range. This is done because there are no known Icelandic networks utilising CGNAT and therefore using its address space for allocations should not be a problem in the short-term. This range will later be replaced with a more reasonable PI IXP allocation from RIPE which we are actively working towards acquiring.</p>
+            <p class="paragraph">Nedless to say, neither of these ranges should ever appear in DFZ. If you encounter a leak of this range anywhere please contact <a href="mailto:thorix@peering.is">thorix@peering.is</a> ASAP or call <a href="+354 784 0020">+354 784 0020</a>.</p>
+        </div>
         <div class="footer">
             <div class="inner">
                 <p>&copy; <span id="year">2023</span> Northlayer ehf.</p>
